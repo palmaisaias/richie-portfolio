@@ -16,3 +16,31 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
+
+
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 1.5rem 1rem;
+  }
+  .projects-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .projects-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-page {
+    padding: 1rem 0.5rem;
+  }
+  .projects-heading {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

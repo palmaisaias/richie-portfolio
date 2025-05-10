@@ -55,3 +55,38 @@
 .project-btn:hover {
   opacity: 0.9;
 }
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+  .project-img-wrapper {
+    padding-top: 50%; /* taller ratio for tablets */
+  }
+  .project-title {
+    font-size: 1.2rem;
+  }
+  .project-desc {
+    font-size: 0.95rem;
+  }
+  .project-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-img-wrapper {
+    padding-top: 56.25%; /* back to 16:9 for small screens */
+  }
+  .project-title {
+    font-size: 1rem;
+  }
+  .project-desc {
+    font-size: 0.85rem;
+  }
+  .project-btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

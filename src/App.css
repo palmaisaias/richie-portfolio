@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+
+@media (max-width: 768px) {
+  /* Narrower root padding for tablets */
+  #root {
+    padding: 1.5rem;
+  }
+  /* Slightly smaller logo */
+  .logo {
+    height: 5em;
+    padding: 1rem;
+  }
+  /* Tighter card padding */
+  .card {
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Compact root padding for phones */
+  #root {
+    padding: 1rem;
+  }
+  /* Further reduce logo size */
+  .logo {
+    height: 4em;
+    padding: 0.75em;
+  }
+  /* Minimal card padding */
+  .card {
+    padding: 1em;
+  }
+}
