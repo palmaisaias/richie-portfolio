@@ -1,0 +1,69 @@
+/* Container centers the form on the page */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+  background: #f4f6f8;
+}
+
+/* The form itself */
+.contact-form {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Each label + field grouping */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Inputs and textarea */
+.form-input,
+.form-textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #3366ff;
+  box-shadow: 0 0 0 3px rgba(51,102,255,0.2);
+}
+
+/* Make textarea a bit taller */
+.form-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Submit button */
+.form-submit {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  background: #3366ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.form-submit:hover {
+  background: #2757cc;
+  transform: translateY(-1px);
+}
