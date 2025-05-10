@@ -1,0 +1,11 @@
+services:
+  - type: static
+    name: richie-portfolio
+    env: static
+    branch: main
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    redirects:
+      - source: "/*"
+        destination: "/index.html"
+        status: 200
